@@ -6,7 +6,7 @@
   src: url("../webfonts/fa-solid-900.eot");
   src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
 
-/* line 16, /Applications/MAMP/htdocs/simplon/DOGSAFE/ASSETS/VENDOR/fontawesome-free-5.7.1-web/scss/solid.scss */
+/* line 16, /Applications/MAMP/htdocs/simplon/DOGSAFE-GitRepo/ASSETS/VENDOR/fontawesome-free-5.7.1-web/scss/solid.scss */
 .fa,
 .fas {
   font-family: 'Font Awesome 5 Free';
