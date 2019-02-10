@@ -1,0 +1,260 @@
+/*----------------- GLOBAL --------------*/
+
+*{
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+.yellow {
+    color: #FFC563;
+}
+
+.btn {
+    font-weight: bold;
+    font-size: 26px;
+    border-radius: 300px;
+}
+
+
+/* Pour agrandir la taille du bouton */
+.btn-xl {
+    padding: 1rem 2rem;
+}
+
+/* Pour changer la couleur du bouton */
+.btn-primary {
+    background-color:#ffc563;
+    border-color: #ffc563;
+    border-width: 0.1ch;
+}
+
+/* Pour changer la couleur du :hover bouton */
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    border-color: #ffc563;
+    border-width: 0.1ch;
+    background-color: rgba(255, 197, 99, 0.19);
+  /*  padding: 8rem 0;*/
+}
+
+/* Pour une légère ombre portée au click du bouton */
+.btn-primary:active, btn-primary:focus {
+    box-shadow: 0 0 0 0.2 rem rgba(240, 95, 64, 0.5)!important;
+}
+
+.bg-primary {
+    background-color: #fefdf9 !important;
+}
+
+.first-btn {
+    margin-left: -410px;
+    margin-top: 80px;
+
+}
+section {
+    padding: 8rem 0;
+    /* 8rem en haut et en bas - 0 à droite, à gauche */
+}
+
+.section-heading {
+    margin-top: 0;
+}
+
+/* Pour changer la couleur des logo */
+
+.text-primary {
+    color: #FFC563 !important;
+}
+
+/*----------------- NAVIGATION --------------*/
+
+#mainNav {
+    border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+    background-color: #fff;
+    font-family: 'Montserrat', Arial, sans-serif;
+    transition: all 0.2s;
+}
+
+#mainNav .navbar-brand {
+    font-weight: 500;
+    color: grey;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+    /* Cible les éléments enfants */
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: black;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+    color: #FFC563;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus:active {
+    color: #fff;
+    background-color: transparent;
+}
+
+#mainNav .begin {
+    font-weight: normal;
+    font-size: 17px;
+    border-radius: 300px;
+    color: #c6c3c3;
+
+    background-color:white;
+    border-color: #ffc563;
+    border-width: 0.2ch;
+
+}
+
+#mainNav .begin:hover, .begin:focus, .begin:active {
+    font-weight: normal;
+    font-size: 17px;
+    border-radius: 300px;
+    color: white;
+
+    background-color:#ffc563;
+    border-color: #ffc563;
+    border-width: 0.2ch;
+
+}
+
+#mainNav .connect {
+    font-weight: normal;
+    font-size: 17px;
+    border-radius: 300px;
+    color: white;
+
+    background-color:#ffc563;
+    border-color: #ffc563;
+    border-width: 0.2ch;
+
+}
+
+#mainNav .connect:hover, .connect:focus, .connect:active {
+    font-weight: normal;
+    font-size: 17px;
+    border-radius: 300px;
+    color: #c6c3c3;
+
+    background-color:white;
+    border-color: #ffc563;
+    border-width: 0.2ch;
+
+}
+
+
+/* Pour que la nav soit transparente */
+
+@media (min-width: 992px) {
+    #mainNav{
+        border-color: transparent;
+        background-color: transparent;
+    }
+
+    #mainNav .navbar-brand {
+        color: rgba(255, 255, 255, 0.7);
+    }
+    /* Pour faire devenir blanc le logo au passage souris */
+
+    #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+        color: black;
+    }
+    #mainNav .navbar-nav > li.nav-item > a.nav-link{
+        padding: 0.5 rem 1rem;
+    }
+
+    #mainNav .navbar-nav > li.nav-item > a.nav-link,
+    #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+        color: #ffffff;
+    }
+
+    #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+    #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover{
+        color: black;
+    }
+}
+
+
+
+/*----------------- HEADER --------------*/
+
+header.accueil {
+    padding-top: 30rem;
+    padding-bottom: calc(10rem - 56px);
+    /* calc : fonction pour calculer le padding-botton */
+    background-image: url("../IMG/background.jpg");
+    background-position: center;
+    background-size: cover;
+
+}
+
+header.accueil h1 {
+    font-weight:500 !important;
+    margin-left: -630px;
+    margin-bottom: -190px;
+
+}
+
+header.accueil p {
+    font-size: 39px !important;
+    margin-left: -630px;
+    margin-top: 180px;
+    font-weight: 100 !important;
+
+}
+/* PORTABLE*/
+@media screen and (min-width: 768px) {
+    header.accueil p {
+        font-size: 1.15em;
+    }
+}
+
+/*IPAD*/
+@media screen and (min-width: 992px) {
+    header.accueil{
+        height: 100vh;
+        min-height: 750px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    h1 {
+
+    }
+}
+/*ORDINNATEUR*/
+@media screen and (min-width: 1200px) {
+    header.accueil h1 {
+        font-size: 4rem;
+    }
+
+}
+
+
+/*----------------- SECTION POURQUOI NOUS CHOISIR --------------*/
+
+.grey-dark {
+    color: #707070;
+    font-weight: bold;
+}
+
+.grey-soft {
+    color: #b9b9b9;
+}
+
+
+/*----------------- FOOTER --------------*/
+
+#contact {
+  width: 100%;
+  height: 397px;
+  background-color: #bfb6b6;
+}
